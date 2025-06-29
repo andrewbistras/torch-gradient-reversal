@@ -1,6 +1,7 @@
 # PyTorch Gradient Reversal Layer
 
 [![PyPI version](https://badge.fury.io/py/torch-gradient-reversal.svg)](https://badge.fury.io/py/torch-gradient-reversal)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Apparrently there are no graphable implementations of the famous DANN paper's Gradient Reversal Layer in Torch. This package implements the Gradient Reversal Layer (GRL) in PyTorch using the `torch.library` API. It is fully compatible with `torch.compile`, CUDA graphs, and distributed training as of Torch v2.7. I am releasing this so no one else will need to experience the pain and suffering to get this right; expect limited updates for future versions.
 
@@ -13,7 +14,7 @@ pip install torch-gradient-reversal
 
 ### From Source
 ```bash
-git clone https://github.com/yourusername/torch-gradient-reversal.git
+git clone https://github.com/andrewbistras/torch-gradient-reversal.git
 cd torch-gradient-reversal
 pip install -e .
 ```
@@ -160,4 +161,4 @@ def gradient_reversal(x: Tensor, alpha: float = 1.0) -> Tensor:
 
 ## License
 
-See the [LICENSE](LICENSE) file for details.
+See the MIT [LICENSE](LICENSE) for details.
